@@ -3,6 +3,7 @@ import Link from "next/link";
 const NavigationBar = () => {
   return (
     <div className="navigator">
+      <Link href="/">Home</Link>
       <Link
         href="/dax_schoof_resume.pdf"
         target="_blank"
@@ -12,9 +13,9 @@ const NavigationBar = () => {
       >
         Resume
       </Link>
-      <Link href="daxschoof.dev/timeline">Timeline</Link>
+      <Link href="/about_me">About Me</Link>
       <Link href="https://www.linkedin.com/in/dax-schoof/">LinkedIn</Link>
-      <Link href="daxschoof.dev/contactme">Contact Me</Link>
+      <Link href="/contact_me">Contact Me</Link>
     </div>
   );
 };

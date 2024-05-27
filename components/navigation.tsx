@@ -1,10 +1,20 @@
+import Link from "next/link";
+
 const NavigationBar = () => {
   return (
     <div className="navigator">
-      <a href="daxschoof.dev/resume">Resume</a>
-      <a href="daxschoof.dev/timeline">Timeline</a>
-      <a href="https://www.linkedin.com/in/dax-schoof/">LinkedIn</a>
-      <a href="daxschoof.dev/contactme">Contact Me</a>
+      <Link
+        href="/dax_schoof_resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download
+        locale={false}
+      >
+        Resume
+      </Link>
+      <Link href="daxschoof.dev/timeline">Timeline</Link>
+      <Link href="https://www.linkedin.com/in/dax-schoof/">LinkedIn</Link>
+      <Link href="daxschoof.dev/contactme">Contact Me</Link>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const width = useWindowSize().width;
+  const { height, width } = useWindowSize();
 
   return (
     <div className="content">
@@ -13,9 +13,8 @@ export default function Home() {
         <div className="photoOfMe">
           <Image
             src={"/self_photo.JPG"}
-            height={width / 2.75}
-            width={(width * 1.2) / 2.75}
-            objectFit="cover"
+            height={Math.min(width, height) / 2.75}
+            width={(Math.min(width, height) * 1.2) / 2.75}
             alt="a photo of me!"
           />
         </div>

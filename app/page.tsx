@@ -21,10 +21,10 @@ export default function Home() {
         </div>
         <div>
           Hi! My name is Dax. I&apos;m a software engineer currently based in
-          Madison, WI. I have experience with web development (full stack),
-          database design and development, and scaling/performance of systems.
-          In my personal quest for programming knowledge, I&apos;ve also done
-          some mobile and AI/Data Science development.
+          Madison, WI. My experience is in web dev (full stack), database design
+          and development, and scaling/performance of systems. In my personal
+          quest for programming knowledge, I&apos;ve also done some mobile and
+          AI/Data Science development.
           <br />
           <br />
           If you&apos;re looking for my resume, here&apos;s a link:{" "}

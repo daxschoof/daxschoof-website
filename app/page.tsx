@@ -20,14 +20,14 @@ export default function Home() {
           />
         </div>
         <div>
-          Hi! My name is Dax. I'm a software engineer currently based in
+          Hi! My name is Dax. I&apos;m a software engineer currently based in
           Madison, WI. I have experience with web development (full stack),
           database design and development, and scaling/performance of systems.
-          In my personal quest for programming knowledge, I've also done some
-          mobile and AI/Data Science development.
+          In my personal quest for programming knowledge, I&apos;ve also done
+          some mobile and AI/Data Science development.
           <br />
           <br />
-          If you're looking for my resume, here's a link:{" "}
+          If you&apos;re looking for my resume, here&apos;s a link:{" "}
           <Link
             href="/dax_schoof_resume.pdf"
             id="inlineLink"
@@ -45,32 +45,24 @@ export default function Home() {
 }
 
 function useWindowSize() {
-  // Initialize state with undefined width/height so server and client renders match
-  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState({
     width: 0,
     height: 0,
   });
 
   useEffect(() => {
-    // only execute all the code below in client side
-    // Handler to call on window resize
     function handleResize() {
-      // Set window width/height to state
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
       });
     }
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Call handler right away so state gets updated with initial window size
     handleResize();
 
-    // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty array ensures that effect is only run on mount
+  }, []);
   return windowSize;
 }

@@ -10,7 +10,7 @@ const ContactMe = () => {
       <Link id="inlineLink" href="mailto:daxschoof@gmail.com">
         daxschoof@gmail.com
       </Link>
-      .{"  "}If you'd like to connect, here is my LinkedIn page:{"  "}
+      .{"  "}If you&apos;d like to connect, here is my LinkedIn page:{"  "}
       <Link id="inlineLink" href="https://www.linkedin.com/in/dax-schoof/">
         LinkedIn
       </Link>

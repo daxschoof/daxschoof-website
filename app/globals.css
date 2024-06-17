@@ -1,5 +1,7 @@
 body {
-  background-color: cadetblue;
+  background-color: #282828;
+
+  color: #eeeeee;
 
   height: 100%;
   width: 100%;
@@ -11,52 +13,12 @@ body {
   flex-direction: column;
 }
 
-.mainPage {
-  flex: 10;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+h1 {
+  color: #afdde5;
 }
 
-.card {
-  height: 55%;
-  width: 85%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 25px;
-
-  background-color: blanchedalmond;
-
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.navigator {
-  background-color: blanchedalmond;
-
-  height: 100%;
-  height: -moz-available; /* WebKit-based browsers will ignore this. */
-  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-  height: stretch;
-
-  flex: 1;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
-  margin: 0 10px 10px 10px;
-
-  -moz-box-shadow: 0px 3px 8px rgb(100, 100, 100);
-  -webkit-box-shadow: 0px 3px 8px rgb(100, 100, 100);
-  box-shadow: 0px 3px 8px rgb(100, 100, 100);
+h2 {
+  color: #04a4af;
 }
 
 a:link,
@@ -66,7 +28,7 @@ a:visited {
 }
 
 a {
-  color: #18272f;
+  color: #04a4af;
   position: relative;
   text-decoration: none;
 }
@@ -88,4 +50,63 @@ a::before {
 a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+.header {
+  margin: 0;
+
+  margin-top: 20px;
+  margin-left: 30px;
+
+  flex: 1;
+}
+
+.mainPage {
+  flex: 30;
+
+  overflow: scroll;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.imageAndTextContainer {
+  display: flex;
+}
+
+#inlineLink {
+  color: #e522e5;
+}
+
+.photoOfMe {
+  margin-right: 15px;
+}
+
+.navigator {
+  background-color: #444;
+
+  height: 100%;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: stretch;
+
+  color: #e522e5;
+  flex: 2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 0 10px 10px 10px;
+
+  -moz-box-shadow: 0px 3px 8px rgb(100, 100, 100);
+  -webkit-box-shadow: 0px 3px 8px rgb(100, 100, 100);
+  box-shadow: 0px 3px 8px rgb(100, 100, 100);
 }

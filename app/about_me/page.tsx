@@ -1,5 +1,5 @@
 const AboutMe = () => {
-  return <p>This is about me!</p>;
+  return <p>About Me</p>;
 };
 
 export default AboutMe;

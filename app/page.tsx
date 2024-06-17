@@ -58,6 +58,7 @@ function useWindowSize() {
     }
 
     window.addEventListener("resize", handleResize);
+    screen.orientation.addEventListener("change", handleResize);
 
     handleResize();
 
